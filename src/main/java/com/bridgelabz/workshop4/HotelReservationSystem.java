@@ -1,42 +1,20 @@
 package com.bridgelabz.workshop4;
 
-import java.time.DayOfWeek;
+
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 import java.util.*;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Scanner;
 import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 import java.text.*;
 import java.util.concurrent.TimeUnit;
 import java.text.ParseException;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
 import java.util.stream.*;
 import java.util.stream.Stream;
-import java.util.Date;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 
 public class HotelReservationSystem {
@@ -86,7 +64,6 @@ public class HotelReservationSystem {
         }
     }
 
-
     public void finalHotelReseravationSystem() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Customer Type ( Regular or Rewarded )");
@@ -106,7 +83,7 @@ public class HotelReservationSystem {
         System.out.println("Total Weekends " + totalWeekends);
         lowCostHotelis(totalWeekDays, totalWeekends, regularReward);
     }
-    public static void main(String[] args) {
+      public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         HotelReservationSystem hrs = new HotelReservationSystem();
         hrs.hotelList.add(new Hotel("Lakewood", 110, 80, 90, 80, 3));
@@ -114,4 +91,5 @@ public class HotelReservationSystem {
         hrs.hotelList.add(new Hotel("Ridgewood", 220, 100, 150, 40, 5));
         hrs.finalHotelReseravationSystem();
     }
+    
 }
